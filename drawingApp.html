@@ -1,0 +1,15 @@
+<body id="bd">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+<div style="position:absolute;left:10px;background-color:white;text-align:center;width:250px;" id="main">
+<br>
+<button onclick="lines=false;setTimeout(function(){saveCanvas('image','png');lines=true}, 1000);" style="text-align:center;">Save</button>
+<button onclick="pos = [];" style="text-align:center;">Reset</button>
+<button onclick="if(lines){lines=false}else{lines=true}" style="text-align:center;">Toggle Lines</button>
+
+<p style="left:10px;color:red;">Red <input id='red' type="range" max="255"></p>
+<p style="left:10px;color:green;top:30px;">Green <input id='green' type="range" max="255"></p>
+<p style="left:10px;color:blue;top:50px;">Blue <input id='blue' type="range" max="255"></p>
+<p style="left:10px;color:black;top:70px;">Size <input id='size' type="range" max="100" min="5" value="25"></p>
+</div>
+<script src="sketch.js"></script>
+</body>
